@@ -36,12 +36,8 @@ pipeline {
             }
         }
 
-        stage('Deploy') {
-            steps {
-                // Add deployment steps if needed
-                // For example, deploy to a web server or push to a container registry
-            }
-        }
+            
+        
     }
 
     post {
