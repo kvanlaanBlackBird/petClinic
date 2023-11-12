@@ -10,14 +10,15 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout your source code from version control
-                checkout scm
+                checkout main
             }
         }
 
         stage('Build') {
             steps {
                 // Build your Maven project
-                sh /bin/mvn clean install
+		./mvnw package
+		java -jar target/*.jar
             }
         }
 
