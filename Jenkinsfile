@@ -17,8 +17,10 @@ pipeline {
         stage('Build') {
             steps {
                 // Build your Maven project
-	sh "./mvnw package
-		java -jar target/*.jar"
+ 		sh '''
+                    ./mvnw package
+                    java -jar target/*.jar
+                '''
             }
         }
 
