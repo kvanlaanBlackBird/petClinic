@@ -40,21 +40,21 @@ pipeline {
         
     }
 
-    post {
-        success {
+    //post {
+        //success {
             // Actions to take when the build is successful
-        }
+        //}
 
-        failure {
+        //failure {
             // Actions to take when the build fails
-        }
+        //}
 
-        unstable {
+        //unstable {
             // Actions to take when the build is unstable
-        }
+       // }
 
-        always {
+       // always {
             // Actions to take regardless of the build result
-        }
-    }
+        //}
+    //}
 }
